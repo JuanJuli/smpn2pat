@@ -16,7 +16,8 @@ class Kegiatan extends Migration
         Schema::create('kegiatan', function(Blueprint $table){
             $table->increments('id');
             $table->string('nama_kegiatan');
-            $table->string('file');
+            $table->string('gambar')->nullable();
+            $table->string('isi');
             $table->timestamps();
         });
     }

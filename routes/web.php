@@ -22,33 +22,33 @@ Route::get('admin', 'HomeController@index')->name('admin');
 Route::get('siswa', 'SiswaController@index')->name('siswa');
 // Kegiatan
 Route::get('kegiatan', 'KegiatanController@show')->name('kegiatan');
-Route::get('kegiatan/edit/{id}','KegiatanController@edit')->name('kegiatan.edit');
-Route::get('kegiatan/create','KegiatanController@create')->name('kegiatan.create');
+Route::get('kegiatan/ubah/{id}','KegiatanController@ubah')->name('admin.ubahk');
+Route::get('kegiatan/tambah','KegiatanController@tambah')->name('tambah.k');
 Route::get('kegiatan/hapus/{id}','KegiatanController@destroy')->name('kegiatan.hapus');
 Route::post('kegiatan/update','KegiatanController@update')->name('kegiatan.update');
-Route::post('kegiatan/store','KegiatanController@store')->name('kegiatan.store');
+Route::post('kegiatan/store','KegiatanController@store')->name('ini');
 // Pengumuman
 Route::resource('pengumuman','PengumumanController');
 Route::get('pengumuman', 'PengumumanController@index')->name('pengumuman');
-Route::get('pengumuman/edit/{id}','PengumumanController@edit')->name('pengumuman.edit');
+Route::get('pengumuman/ubah/{id}','PengumumanController@ubah')->name('admin.ubahp');
 Route::get('pengumuman/hapus/{id}','PengumumanController@destroy')->name('pengumuman.hapus');
-Route::post('pengumuman/update','PengumumanController@update')->name('pengumuman.update');
-Route::get('pengumuman/show','PengumumanController@show')->name('pengumuman.show');
-Route::post('pengumuman/store','PengumumanController@store')->name('pengumuman.store');
+Route::post('pengumuman/update','PengumumanController@update')->name('update.adminp');
+Route::get('pengumuman/tambah','PengumumanController@show')->name('tambah.pengumuman');
+Route::post('pengumuman/store','PengumumanController@store')->name('admin.pstore');
 // Identitas
 Route::resource('identitas','IdentitasController');
 Route::get('identitas', 'IdentitasController@index')->name('identitas');
 Route::get('identitas/edit/{id}','IdentitasController@edit')->name('identitas.edit');
 Route::post('identitas/update','IdentitasController@update')->name('identitas.update');
-//========================PUBLIC===============================//
+//==========================PUBLIC=================================//
 Route::resource('home','PublicController');
 Route::get('home','PublicController@show')->name('public');
 //Pengumuman
-Route::resource('pengumuman','PPengumumanController');
-Route::get('pengumuman','PPengumumanController@show')->name('public.pengumuman');
+Route::resource('pengumuman-sekolah','PPengumumanController');
+Route::get('pengumuman-sekolah','PPengumumanController@show')->name('public.pengumuman');
 // Kegiataan
-Route::resource('public/kegiatan','PKegiatanController');
-Route::get('public/kegiatan','PKegiatanController@show')->name('public.kegiatan');
+Route::resource('kegiatan-sekolah','PKegiatanController');
+Route::get('kegiatan-sekolah','PKegiatanController@show')->name('public.kegiatan');
 //tentang
 Route::resource('tentang','TentangController');
 Route::get('tentang','TentangController@show')->name('tentang');

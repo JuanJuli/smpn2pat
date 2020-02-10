@@ -4,6 +4,8 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 use DB;
+use File;
+use App\Kegiatan;
 
 class KegiatanController extends Controller
 {
@@ -18,35 +20,98 @@ class KegiatanController extends Controller
         return view('menu/kegiatan/kegiatan',['kegiatan'=>$kegiatan]);
     }
 
-    public function create(){
+    public function tambah(){
         return view('menu/kegiatan/tambah');
     }
 
-    public function edit($id){
+    public function ubah($id){
         $kegiatan = DB::table('kegiatan')->where('id',$id)->get();
         return view('menu/kegiatan/edit',['kegiatan'=>$kegiatan]);
     }
 
     public function store(Request $request){
-        DB::table('kegiatan')->insert([
-            'nama_kegiatan'=>$request->nama,
-            'isi'=>$request->isi,
-            'tanggal'=>date('Y-m-d')
-        ]);
+
+        if (isset($request->file)) {
+
+            $tujuan = 'file/kegiatan';
+
+            $this->validate($request,[
+                'nama'=>'required',
+                'isi'=>'required',
+                'file'=>'required'
+            ]);
+
+            $file = $request->file('file');
+
+            $nama_file = $file->getClientOriginalName();
+
+            $file->move($tujuan,$file->getClientOriginalName());
+     
+            Kegiatan::create([
+                'nama_kegiatan'=>$request->nama,
+                'isi'=>$request->isi,
+                'gambar'=>$nama_file
+            ]);
+
+        }else{
+            $this->validate($request,[
+                'nama'=>'required',
+                'isi'=>'required'
+            ]);
+
+            Kegiatan::create([
+                'nama_kegiatan'=>$request->nama,
+                'isi'=>$request->isi,
+                'gambar'=>'none'
+            ]);
+
+        }
+        
 
         return redirect('kegiatan');
     }
 
     public function update(Request $request){
-        DB::table('kegiatan')->where('id',$request->id)->update([
-            'nama_kegiatan'=>$request->nama,
-            'isi'=>$request->isi
-        ]);
+        if (isset($request->file)) {
+
+            $tujuan = 'file/kegiatan';
+
+            $file = $request->file('file');
+
+            $nama_file = $file->getClientOriginalName();
+
+            $file->move($tujuan,$file->getClientOriginalName());
+
+            $kegiatan = Kegiatan::findOrFail($request->id);
+
+            File::delete($tujuan.$kegiatan->gambar);
+
+            $kegiatan->update([
+                'nama_kegiatan'=>$request->nama,
+                'isi'=>$request->isi,
+                'gambar'=>$nama_file
+            ]);
+
+        }else{
+            $kegiatan = Kegiatan::findOrFail($request->id);
+            $kegiatan->update([
+                'nama_kegiatan'=>$request->nama,
+                'isi'=>$request->isi
+            ]);
+        }
+
         return redirect('kegiatan');
     }
 
     public function destroy($id){
-        DB::table('kegiatan')->where('id',$id)->delete();
+
+        $tujuan = 'file/kegiatan';
+
+        $kegiatan = Kegiatan::findOrFail($id);
+
+        File::delete($tujuan.$kegiatan->gambar);
+
+        $kegiatan->delete();
 
         return redirect('kegiatan');
     }

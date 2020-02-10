@@ -24,12 +24,15 @@
             <!-- /.box-header -->
             <div class="box-body">
               <form method="post" 
-              action="{{route('kegiatan.store')}}">
+              action="{{route('ini')}}"
+              enctype="multipart/form-data">
               {{ csrf_field() }}
                 <label>Nama Kegiatan</label>
                 <input class="form-control" type="text" name="nama">
                 <label>Isi</label>
                 <textarea class="form-control" name="isi"></textarea>
+                <label>Gambar</label>
+                <input type="file" name="file" class="form-control">
                 <button style="margin-top: 10px;" type="submit" class="btn btn-sm btn-primary">Submit</button>
               </form>
      </div>

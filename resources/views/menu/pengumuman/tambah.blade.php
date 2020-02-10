@@ -23,15 +23,15 @@
             </div>
             <!-- /.box-header -->
             <div class="box-body">
-              <form method="post" 
-              action="{{route('pengumuman.store')}}">
+              <form method="post" enctype="multipart/form-data" 
+              action="{{route('admin.pstore')}}">
               {{ csrf_field() }}
                 <label>Nama Pengumuman</label>
                 <input class="form-control" type="text" name="nama">
                 <label>Isi</label>
                 <textarea class="form-control" name="isi"></textarea>
                 <label>File</label>
-                <input type="file" name="file" disabled>
+                <input type="file" name="file" class="form-control">
                 <button style="margin-top: 10px;" type="submit" class="btn btn-sm btn-primary">Submit</button>
               </form>
      </div>

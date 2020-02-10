@@ -24,14 +24,16 @@
             <!-- /.box-header -->
             <div class="box-body">
               @foreach($kegiatan as $k)
-              <form method="post" action="{{route('kegiatan.update')}}">
+              <form method="post" action="{{route('kegiatan.update')}}" enctype="multipart/form-data">
                 {{ csrf_field() }}
                 <input type="hidden" name="id" value="{{ $k->id }}">
                 <label>Nama Kegiatan</label>
                 <input class="form-control" type="text" name="nama" value="{{ $k->nama_kegiatan }}">
-                <label>Isi</label>
+                <label>Isi Kegiatan</label>
                 <textarea class="form-control" name="isi">{{ $k->isi }}</textarea>
-                <button class="btn btn-sm btn-primary">Edit</button>
+                <label>Gambar</label>
+                <input type="file" name="file" class="form-control">
+                <button style="margin-top: 10px;" class="btn btn-sm btn-primary">Edit</button>
               </form>
               @endforeach
      </div>

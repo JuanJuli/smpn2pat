@@ -18,24 +18,23 @@
 
 @section('konten')
 <div class="box">
-            <div class="box-header">
-              <h3 class="box-title">Data Pengumuman</h3>
-            </div>
-            <!-- /.box-header -->
-            <div class="box-body">
-              @foreach($pengumuman as $p)
-              <form method="post" action="{{route('pengumuman.update')}}">
-                {{ csrf_field() }}
-                <input type="hidden" name="id" value="{{ $p->id }}">
-                <label>Nama Pengumuman</label>
-                <input class="form-control" type="text" name="nama" value="{{ $p->nama_pengumuman }}">
-                <label>Isi</label>
-                <textarea class="form-control" name="isi">{{ $p->isi }}</textarea>
-                <label>File</label>
-                <input type="file" name="file" value="{{ $p->file }}">
-                <button class="btn btn-sm btn-primary">Edit</button>
-              </form>
-              @endforeach
-     </div>
-   </div>
+  <div class="box-header">
+    <h3 class="box-title">Data Pengumuman</h3>
+  </div>
+  @foreach($peng as $p)
+  <div class="box-body">
+    <form method="post" action="{{route('update.adminp')}}" enctype="multipart/form-data">
+      {{ csrf_field() }}
+      <input type="hidden" name="id" value="{{ $p->id }}">
+      <label>Nama Pengumuman</label>
+      <input class="form-control" type="text" name="nama" value="{{ $p->nama_pengumuman }}">
+      <label>Isi</label>
+      <textarea class="form-control" name="isi">{{ $p->isi }}</textarea>
+      <label>File</label>
+      <input type="file" name="file" class="form-control">
+      <button style="margin-top: 10px;" class="btn btn-sm btn-primary">Edit</button>
+    </form>
+  </div>
+  @endforeach
+</div>
 @endsection

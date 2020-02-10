@@ -23,7 +23,7 @@
             </div>
             <!-- /.box-header -->
             <div class="box-body">
-              <a href="{{ route('pengumuman.show')}}" style="margin-bottom: 25px;" type="button" class="btn btn-primary btn-sm">Tambah Pengumuman</a>
+              <a href="{{ route('tambah.pengumuman')}}" style="margin-bottom: 25px;" type="button" class="btn btn-primary btn-sm">Tambah Pengumuman</a>
                 <div class="table-responsive" >
               <table style="overflow-x: scroll;" id="example1" class="table table-bordered table-striped">
                   <thead>
@@ -43,7 +43,7 @@
           <td>{{ $p->isi }}</td>
           <td>{{ $p->file }}</td>
           <td>
-            <a class="btn btn-sm btn-primary" href="{{route('pengumuman.edit',$p->id)}}">Edit</a>
+            <a class="btn btn-sm btn-primary" href="{{route('admin.ubahp',$p->id)}}">Edit</a>
             <a class="btn btn-sm btn-danger" href="{{route('pengumuman.hapus',$p->id)}}">Hapus</a>
           </td>
         </tr>
