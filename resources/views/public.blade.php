@@ -11,17 +11,17 @@
 								<img class="img-fluid" src="{{ asset('magazine/img/top-post1.jpg') }}" alt="">
 							</div>
 							<div class="top-post-details">
-								<ul class="tags">
+								<!-- <ul class="tags">
 									<li><a href="#">Food Habit</a></li>
-								</ul>
-								<a href="image-post.html">
+								</ul> -->
+								<!-- <a href="image-post.html">
 									<h3>A Discount Toner Cartridge Is Better Than Ever.</h3>
-								</a>
-								<ul class="meta">
+								</a> -->
+								<!-- <ul class="meta">
 									<li><a href="#"><span class="lnr lnr-user"></span>Mark wiens</a></li>
 									<li><a href="#"><span class="lnr lnr-calendar-full"></span>03 April, 2018</a></li>
 									<li><a href="#"><span class="lnr lnr-bubble"></span>06 Comments</a></li>
-								</ul>
+								</ul> -->
 							</div>
 						</div>
 						<div class="col-lg-4 top-post-right">
@@ -30,11 +30,11 @@
 									<div class="overlay overlay-bg"></div>
 									<img class="img-fluid" src="{{ asset('magazine/img/top-post2.jpg') }}" alt="">
 								</div>
-								<div class="top-post-details">
-									<ul class="tags">
+								<!-- <div class="top-post-details"> -->
+									<!-- <ul class="tags">
 										<li><a href="#">Food Habit</a></li>
-									</ul>
-									<a href="image-post.html">
+									</ul> -->
+									<!-- <a href="image-post.html">
 										<h4>A Discount Toner Cartridge Is Better Than Ever.</h4>
 									</a>
 									<ul class="meta">
@@ -42,7 +42,7 @@
 										<li><a href="#"><span class="lnr lnr-calendar-full"></span>03 April, 2018</a></li>
 										<li><a href="#"><span class="lnr lnr-bubble"></span>06 Comments</a></li>
 									</ul>
-								</div>
+								</div> -->
 							</div>
 							<div class="single-top-post mt-10">
 								<div class="feature-image-thumb relative">
@@ -50,25 +50,25 @@
 									<img class="img-fluid" src="{{ asset('magazine/img/top-post3.jpg') }}" alt="">
 								</div>
 								<div class="top-post-details">
-									<ul class="tags">
+									<!-- <ul class="tags">
 										<li><a href="#">Food Habit</a></li>
-									</ul>
-									<a href="image-post.html">
+									</ul> -->
+									<!-- <a href="image-post.html">
 										<h4>A Discount Toner Cartridge Is Better</h4>
 									</a>
 									<ul class="meta">
 										<li><a href="#"><span class="lnr lnr-user"></span>Mark wiens</a></li>
 										<li><a href="#"><span class="lnr lnr-calendar-full"></span>03 April, 2018</a></li>
 										<li><a href="#"><span class="lnr lnr-bubble"></span>06 Comments</a></li>
-									</ul>
+									</ul> -->
 								</div>
 							</div>
 						</div>
-						<div class="col-lg-12">
+						<!-- <div class="col-lg-12">
 							<div class="news-tracker-wrap">
 								<h6><span>Breaking News:</span>   <a href="#">Astronomy Binoculars A Great Alternative</a></h6>
 							</div>
-						</div>
+						</div> -->
 					</div>
 				</div>
 			</section>
@@ -80,117 +80,43 @@
 						<div class="col-lg-8 post-list">
 							<!-- Start latest-post Area -->
 							<div class="latest-post-wrap">
-								<h4 class="cat-title">Latest News</h4>
-								<div class="single-latest-post row align-items-center">
-									<div class="col-lg-5 post-left">
-										<div class="feature-img relative">
-											<div class="overlay overlay-bg"></div>
-											<img class="img-fluid" src="{{ asset('magazine/img/l1.jpg') }}" alt="">
-										</div>
-										<ul class="tags">
-											<li><a href="#">Lifestyle</a></li>
-										</ul>
-									</div>
-									<div class="col-lg-7 post-right">
-										<a href="image-post.html">
-											<h4>A Discount Toner Cartridge Is
-											Better Than Ever.</h4>
-										</a>
-										<ul class="meta">
-											<li><a href="#"><span class="lnr lnr-user"></span>Mark wiens</a></li>
-											<li><a href="#"><span class="lnr lnr-calendar-full"></span>03 April, 2018</a></li>
-											<li><a href="#"><span class="lnr lnr-bubble"></span>06 Comments</a></li>
-										</ul>
-										<p class="excert">
-											Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt.
-										</p>
-									</div>
-								</div>
+								<h4 class="cat-title">Kegiatan</h4>
+								@foreach($kegiatan as $kg)
 								<div class="single-latest-post row align-items-center">
 									<div class="col-lg-5 post-left">
 										<div class="feature-img relative">
 											<div class="overlay overlay-bg"></div>
 											<img class="img-fluid" src="{{ asset('magazine/img/l2.jpg') }}" alt="">
 										</div>
-										<ul class="tags">
+										<!-- <ul class="tags">
 											<li><a href="#">Science</a></li>
-										</ul>
+										</ul> -->
 									</div>
 									<div class="col-lg-7 post-right">
-										<a href="image-post.html">
-											<h4>A Discount Toner Cartridge Is
-											Better Than Ever.</h4>
+										<a href="{{route('post.k',$kg->id)}}">
+											<h4>{{$kg->nama_kegiatan}}</h4>
 										</a>
 										<ul class="meta">
-											<li><a href="#"><span class="lnr lnr-user"></span>Mark wiens</a></li>
-											<li><a href="#"><span class="lnr lnr-calendar-full"></span>03 April, 2018</a></li>
-											<li><a href="#"><span class="lnr lnr-bubble"></span>06 Comments</a></li>
+											<!-- <li><a href="#"><span class="lnr lnr-user"></span>Mark wiens</a></li> -->
+											<li><a href="#"><span class="lnr lnr-calendar-full"></span>{{$kg->created_at}}</a></li>
+											<!-- <li><a href="#"><span class="lnr lnr-bubble"></span>06 Comments</a></li> -->
 										</ul>
 										<p>
-											Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt.
+											{{ $kg->isi }}
 										</p>
 									</div>
 								</div>
-								<div class="single-latest-post row align-items-center">
-									<div class="col-lg-5 post-left">
-										<div class="feature-img relative">
-											<div class="overlay overlay-bg"></div>
-											<img class="img-fluid" src="{{ asset('magazine/img/l3.jpg') }}" alt="">
-										</div>
-										<ul class="tags">
-											<li><a href="#">Travel</a></li>
-										</ul>
-									</div>
-									<div class="col-lg-7 post-right">
-										<a href="image-post.html">
-											<h4>A Discount Toner Cartridge Is
-											Better Than Ever.</h4>
-										</a>
-										<ul class="meta">
-											<li><a href="#"><span class="lnr lnr-user"></span>Mark wiens</a></li>
-											<li><a href="#"><span class="lnr lnr-calendar-full"></span>03 April, 2018</a></li>
-											<li><a href="#"><span class="lnr lnr-bubble"></span>06 Comments</a></li>
-										</ul>
-										<p>
-											Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt.
-										</p>
-									</div>
-								</div>
-								<div class="single-latest-post row align-items-center">
-									<div class="col-lg-5 post-left">
-										<div class="feature-img relative">
-											<div class="overlay overlay-bg"></div>
-											<img class="img-fluid" src="{{ asset('magazine/img/l4.jpg') }}" alt="">
-										</div>
-										<ul class="tags">
-											<li><a href="#">Fashion</a></li>
-										</ul>
-									</div>
-									<div class="col-lg-7 post-right">
-										<a href="image-post.html">
-											<h4>A Discount Toner Cartridge Is
-											Better Than Ever.</h4>
-										</a>
-										<ul class="meta">
-											<li><a href="#"><span class="lnr lnr-user"></span>Mark wiens</a></li>
-											<li><a href="#"><span class="lnr lnr-calendar-full"></span>03 April, 2018</a></li>
-											<li><a href="#"><span class="lnr lnr-bubble"></span>06 Comments</a></li>
-										</ul>
-										<p>
-											Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt.
-										</p>
-									</div>
-								</div>
+								@endforeach
 							</div>
 							<!-- End latest-post Area -->
 							
 							<!-- Start banner-ads Area -->
-							<div class="col-lg-12 ad-widget-wrap mt-30 mb-30">
+							<!-- <div class="col-lg-12 ad-widget-wrap mt-30 mb-30">
 								<img class="img-fluid" src="{{ asset('magazine/img/banner-ad.jpg') }}" alt="">
-							</div>
+							</div> -->
 							<!-- End banner-ads Area -->
 							<!-- Start popular-post Area -->
-							<div class="popular-post-wrap">
+							<!-- <div class="popular-post-wrap">
 								<h4 class="title">Popular Posts</h4>
 								<div class="feature-post relative">
 									<div class="feature-img relative">
@@ -263,10 +189,10 @@
 										</div>
 									</div>
 								</div>
-							</div>
+							</div> -->
 							<!-- End popular-post Area -->
 							<!-- Start relavent-story-post Area -->
-							<div class="relavent-story-post-wrap mt-30">
+							<!-- <div class="relavent-story-post-wrap mt-30">
 								<h4 class="title">Relavent Stories</h4>
 								<div class="relavent-story-list-wrap">
 									<div class="single-relavent-post row align-items-center">
@@ -345,52 +271,29 @@
 										</div>
 									</div>
 								</div>
-							</div>
+							</div> -->
 							<!-- End relavent-story-post Area -->
 						</div>
 						<div class="col-lg-4">
 							<div class="sidebars-area">
 								<div class="single-sidebar-widget editors-pick-widget">
-									<h6 class="title">Editor’s Pick</h6>
+									<h6 class="title">Pengumuman</h6>
 									<div class="editors-pick-post">
-										<div class="feature-img-wrap relative">
-											<div class="feature-img relative">
-												<div class="overlay overlay-bg"></div>
-												<img class="img-fluid" src="{{ asset('magazine/img/e1.jpg') }}" alt="">
-											</div>
-											<ul class="tags">
-												<li><a href="#">Travel</a></li>
-											</ul>
-										</div>
-										<div class="details">
-											<a href="image-post.html">
-												<h4 class="mt-20">A Discount Toner Cartridge Is
-												Better Than Ever.</h4>
-											</a>
-											<ul class="meta">
-												<li><a href="#"><span class="lnr lnr-user"></span>Mark wiens</a></li>
-												<li><a href="#"><span class="lnr lnr-calendar-full"></span>03 April, 2018</a></li>
-												<li><a href="#"><span class="lnr lnr-bubble"></span>06 </a></li>
-											</ul>
-											<p class="excert">
-												Lorem ipsum dolor sit amet, consecteturadip isicing elit, sed do eiusmod tempor incididunt ed do eius.
-											</p>
-										</div>
 										<div class="post-lists">
+											@foreach($pengumuman as $p)
 											<div class="single-post d-flex flex-row">
-												<div class="thumb">
+												<!-- <div class="thumb">
 													<img src="img/e2.jpg" alt="">
-												</div>
+												</div> -->
 												<div class="detail">
-													<a href="image-post.html"><h6>Help Finding Information
-													Online is so easy</h6></a>
+													<a href="{{route('post.p',$p->id)}}"><h6>{{ $p->nama_pengumuman}}</h6></a>
 													<ul class="meta">
-														<li><a href="#"><span class="lnr lnr-calendar-full"></span>03 April, 2018</a></li>
-														<li><a href="#"><span class="lnr lnr-bubble"></span>06</a></li>
+														<li><a href="#"><span class="lnr lnr-calendar-full"></span>{{$p->created_at}}</a></li>	
 													</ul>
 												</div>
 											</div>
-											<div class="single-post d-flex flex-row">
+											@endforeach
+											<!-- <div class="single-post d-flex flex-row">
 												<div class="thumb">
 													<img src="{{ asset('magazine/img/e3.jpg') }}" alt="">
 												</div>
@@ -415,13 +318,14 @@
 														<li><a href="#"><span class="lnr lnr-bubble"></span>06</a></li>
 													</ul>
 												</div>
-											</div>
+											</div> -->
+
 										</div>
 									</div>
 								</div>
-								<div class="single-sidebar-widget ads-widget">
+								<!-- <div class="single-sidebar-widget ads-widget">
 									<img class="img-fluid" src="{{ asset('magazine/img/sidebar-ads.jpg') }}" alt="">
-								</div>
+								</div> -->
 								<div class="single-sidebar-widget newsletter-widget">
 									<h6 class="title">Newsletter</h6>
 									<p>
@@ -441,7 +345,7 @@
 										You can unsubscribe us at any time
 									</p>
 								</div>
-								<div class="single-sidebar-widget most-popular-widget">
+								<!-- <div class="single-sidebar-widget most-popular-widget">
 									<h6 class="title">Most Popular</h6>
 									<div class="single-list flex-row d-flex">
 										<div class="thumb">
@@ -503,8 +407,8 @@
 											</ul>
 										</div>
 									</div>
-								</div>
-								<div class="single-sidebar-widget social-network-widget">
+								</div> -->
+								<!-- <div class="single-sidebar-widget social-network-widget">
 									<h6 class="title">Social Networks</h6>
 									<ul class="social-list">
 										<li class="d-flex justify-content-between align-items-center fb">
@@ -536,7 +440,7 @@
 											<a href="#">Subscribe</a>
 										</li>
 									</ul>
-								</div>
+								</div> -->
 							</div>
 						</div>
 					</div>

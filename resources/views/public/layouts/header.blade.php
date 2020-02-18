@@ -5,16 +5,16 @@
 					<div class="row">
 						<div class="col-lg-6 col-md-6 col-sm-6 col-6 header-top-left no-padding">
 							<ul>
-								<li><a href="#"><i class="fa fa-facebook"></i></a></li>
+								<!-- <li><a href="#"><i class="fa fa-facebook"></i></a></li>
 								<li><a href="#"><i class="fa fa-twitter"></i></a></li>
 								<li><a href="#"><i class="fa fa-dribbble"></i></a></li>
-								<li><a href="#"><i class="fa fa-behance"></i></a></li>
+								<li><a href="#"><i class="fa fa-behance"></i></a></li> -->
 							</ul>
 						</div>
 						<div class="col-lg-6 col-md-6 col-sm-6 col-6 header-top-right no-padding">
 							<ul>
-								<li><a href="tel:+440 012 3654 896"><span class="lnr lnr-phone-handset"></span><span>+440 012 3654 896</span></a></li>
-								<li><a href="mailto:support@colorlib.com"><span class="lnr lnr-envelope"></span><span>support@colorlib.com</span></a></li>
+								<!-- <li><a href="tel:+440 012 3654 896"><span class="lnr lnr-phone-handset"></span><span>+440 012 3654 896</span></a></li>
+								<li><a href="mailto:support@colorlib.com"><span class="lnr lnr-envelope"></span><span>support@colorlib.com</span></a></li> -->
 							</ul>
 						</div>
 					</div>
@@ -29,7 +29,8 @@
 							</a>
 						</div>
 						<div class="col-lg-8 col-md-8 col-sm-12 logo-right no-padding ads-banner">
-							<img class="img-fluid" src="{{ asset('magazine/img/banner-ad.jpg') }}" alt="">
+							<!-- <img class="img-fluid" src="{{ asset('magazine/img/banner-ad.jpg') }}" alt=""> -->
+							<h3>SMP NEGERI 2 PATROL</h3>
 						</div>
 					</div>
 				</div>
@@ -45,7 +46,7 @@
 							<li><a href="{{route('kontak')}}">Kontak</a></li>
 						</ul>
 					</nav><!-- #nav-menu-container -->
-					<div class="navbar-right">
+					<!-- <div class="navbar-right">
 						<form class="Search">
 							<input type="text" class="form-control Search-box" name="Search-box" id="Search-box" placeholder="Search">
 							<label for="Search-box" class="Search-box-label">
@@ -55,7 +56,7 @@
 								<span class="lnr lnr-cross"></span>
 							</span>
 						</form>
-					</div>
+					</div> -->
 				</div>
 			</div>
 		</header>

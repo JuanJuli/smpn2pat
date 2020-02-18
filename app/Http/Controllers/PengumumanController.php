@@ -37,21 +37,29 @@ class PengumumanController extends Controller
 
         $this->validate($request,[
             'nama'=>'required',
-            'isi'=>'required',
-            'file'=>'required'
+            'isi'=>'required'
         ]);
 
-        $file = $request->file('file');
+        if (isset($request->file)) {
+            $file = $request->file('file');
 
-        $nama_file = $file->getClientOriginalName();
+            $nama_file = $file->getClientOriginalName();
 
-        $file->move($tujuan,$file->getClientOriginalName());
+            $file->move($tujuan,$file->getClientOriginalName());
 
-        Pengumuman::create([
-            'nama_pengumuman'=>$request->nama,
-            'isi'=>$request->isi,
-            'file'=>$nama_file
-        ]);
+            Pengumuman::create([
+                'nama_pengumuman'=>$request->nama,
+                'isi'=>$request->isi,
+                'file'=>$nama_file
+            ]);
+
+        }else{
+            Pengumuman::create([
+                'nama_pengumuman'=>$request->nama,
+                'isi'=>$request->isi,
+                'file'=>'kosong'
+            ]);
+        }
 
         return redirect('pengumuman');
     }
