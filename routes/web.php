@@ -16,7 +16,7 @@
 // });
 //========================ADMIN======================//
 Auth::routes();
-Route::get('/', 'HomeController@index')->name('admin');
+Route::get('/', 'PublicController@show')->name('public');
 Route::get('admin', 'HomeController@index')->name('admin');
 
 Route::get('siswa', 'SiswaController@index')->name('siswa');
@@ -56,3 +56,7 @@ Route::get('tentang','TentangController@show')->name('tentang');
 //kontak
 Route::resource('kontak','KontakController');
 Route::get('kontak','KontakController@show')->name('kontak');
+// Postingan
+Route::resource('post','PostController');
+Route::get('post-kegiatan/{id}','PostController@kegiatan')->name('post.k');
+Route::get('post-pengumuman/{id}','PostController@pengumuman')->name('post.p');
