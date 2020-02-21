@@ -29,6 +29,7 @@ Route::post('kegiatan/update','KegiatanController@update')->name('kegiatan.updat
 Route::post('kegiatan/store','KegiatanController@store')->name('ini');
 // Pengumuman
 Route::resource('pengumuman','PengumumanController');
+ Route::get('smpn2patrol', 'PengumumanController@tampilisidatabase');
 Route::get('pengumuman', 'PengumumanController@index')->name('pengumuman');
 Route::get('pengumuman/ubah/{id}','PengumumanController@ubah')->name('admin.ubahp');
 Route::get('pengumuman/hapus/{id}','PengumumanController@destroy')->name('pengumuman.hapus');
@@ -45,7 +46,7 @@ Route::resource('home','PublicController');
 Route::get('home','PublicController@show')->name('public');
 //Pengumuman
 Route::resource('pengumuman-sekolah','PPengumumanController');
-Route::get('pengumuman-sekolah','PPengumumanController@show')->name('public.pengumuman');
+Route::get('pengumuman-sekolah','PPengumumanController@tampilisidatabase')->name('public.pengumuman');
 // Kegiataan
 Route::resource('kegiatan-sekolah','PKegiatanController');
 Route::get('kegiatan-sekolah','PKegiatanController@show')->name('public.kegiatan');

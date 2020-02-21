@@ -19,16 +19,18 @@
 <section class="contact-page-area pt-50 pb-120">
 	<div class="container">
 		<div class="row contact-wrap">
-			<div class="map-wrap" style="width:100%; height: 445px;" id="map"></div>
+			<div class="map-wrap" style="width:100%; height: 445px;" id="">
+				<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3965.274659148155!2d108.00159131431151!3d-6.358484663972739!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e694b74fc4f3a9d%3A0x759a9a28558d686e!2sSMPN%202%20Patrol!5e0!3m2!1sid!2sid!4v1581382281235!5m2!1sid!2sid" width="1090" height="450" frameborder="0" style="border:0;" allowfullscreen=""></iframe>
+			</div>
 			<div class="col-lg-3 d-flex flex-column address-wrap">
 				<div class="single-contact-address d-flex flex-row">
 					<div class="icon">
 						<span class="lnr lnr-home"></span>
 					</div>
 					<div class="contact-details">
-						<h5>Los Angeles, USA</h5>
+						<h7>Patrol, Indramayu</h7>
 						<p>
-							56/8, Rocky beach road
+							Jalan Arjasari Kecamatan Patrol - Indramayu
 						</p>
 					</div>
 				</div>
@@ -37,8 +39,7 @@
 						<span class="lnr lnr-phone-handset"></span>
 					</div>
 					<div class="contact-details">
-						<h5>00 (440) 9865 562</h5>
-						<p>Mon to Fri 9am to 6 pm</p>
+						<h7>(0234) 5613380</h7>
 					</div>
 				</div>
 				<div class="single-contact-address d-flex flex-row">
@@ -46,8 +47,7 @@
 						<span class="lnr lnr-envelope"></span>
 					</div>
 					<div class="contact-details">
-						<h5>support@colorlib.com</h5>
-						<p>Send us your query</p>
+						<h7>smpnegeri2patrol@ymail.com</h7>
 					</div>
 				</div>
 			</div>

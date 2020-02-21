@@ -13,4 +13,5 @@ class Pengumuman extends Model
     	'isi',
     	'file'
     ];
+    
 }

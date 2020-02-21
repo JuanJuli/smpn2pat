@@ -5,16 +5,14 @@
 					<div class="row">
 						<div class="col-lg-6 col-md-6 col-sm-6 col-6 header-top-left no-padding">
 							<ul>
-								<li><a href="#"><i class="fa fa-facebook"></i></a></li>
-								<li><a href="#"><i class="fa fa-twitter"></i></a></li>
-								<li><a href="#"><i class="fa fa-dribbble"></i></a></li>
-								<li><a href="#"><i class="fa fa-behance"></i></a></li>
+								<li><a href="https://id-id.facebook.com/pages/category/Organization/SMPN-2-PATROL-INDRAMAYU-178333731913/"><i class="fa fa-facebook"></i></a></li>
+								<li><a href="#"><i class="fa fa-envelope"></i></a></li>
 							</ul>
 						</div>
 						<div class="col-lg-6 col-md-6 col-sm-6 col-6 header-top-right no-padding">
 							<ul>
-								<li><a href="tel:+440 012 3654 896"><span class="lnr lnr-phone-handset"></span><span>+440 012 3654 896</span></a></li>
-								<li><a href="mailto:support@colorlib.com"><span class="lnr lnr-envelope"></span><span>support@colorlib.com</span></a></li>
+								<li><span class="lnr lnr-phone-handset"></span><span>(0234) 5613380</span></a></li>
+								<li><a href="mailto:support@colorlib.com"><span class="lnr lnr-envelope"></span><span>smpnegeri2patrol@ymail.com</span></a></li>
 							</ul>
 						</div>
 					</div>
