@@ -21,7 +21,7 @@
 			<div class="col-lg-8 post-list">
 				<!-- Start latest-post Area -->
 				<div class="latest-post-wrap">
-					<h4 class="cat-title">Pengumuman Terbaru</h4>
+					<h4 class="cat-title">Pengumuman</h4>
 					@foreach($pengumuman as $p )
 					<div class="single-latest-post row align-items-center">
 						<div class="col-lg-5 post-left">
@@ -40,15 +40,15 @@
 							</a>
 							<ul class="meta">
 								<li><a href="#"><span class="lnr lnr-user"></span>Administrator</a></li>
-								<li><a href="#"><span class="lnr lnr-calendar-full"></span>2 Januari , 2020</a></li>
+								<li><a href="#"><span class="lnr lnr-calendar-full"></span>{{$p->created_at}}</a></li>
 								<li><a href="#"><span class="lnr lnr-tag"></span>Pengumuman</a></li>
 							</ul>
 							<p>
-								{{$p->isi}}Libur semester ganjil tahun ajaran 2019/2020 dimulai dari tanggal 4 Januari 2020.
+								{{$p->isi}}
 							</p>
 						</div>
 					</div>
-					<div class="single-latest-post row align-items-center">
+				<!-- 	<div class="single-latest-post row align-items-center">
 						<div class="col-lg-5 post-left">
 							<div class="feature-img relative">
 								<div class="overlay overlay-bg"></div>
@@ -60,39 +60,15 @@
 						</div>
 						<div class="col-lg-7 post-right">
 							<a href="image-post.html">
-								<h4>{{$p->nama_pengumuman}}Pengumuman pembagian Raport Akhir Semester 1/Ganjil 2019</h4>
+								<h4>{{$p->nama_pengumuman}}</h4>
 							</a>
 							<ul class="meta">
 								<li><a href="#"><span class="lnr lnr-user"></span>Administrator</a></li>
-								<li><a href="#"><span class="lnr lnr-calendar-full"></span>18 Desember, 2019</a></li>
+								<li><a href="#"><span class="lnr lnr-calendar-full"></span>{{$p->created_at}}</a></li>
 								<li><a href="#"><span class="lnr lnr-tag"></span>Pengumuman</a></li>
 							</ul>
 							<p>
-								{{$p->isi}}Berakhirnya semester ganjil tahun pelajaran 2018-2019, ditandai dengan pembagian laporan hasil belajar.
-							</p>
-						</div>
-					</div>
-					<div class="single-latest-post row align-items-center">
-						<div class="col-lg-5 post-left">
-							<div class="feature-img relative">
-								<div class="overlay overlay-bg"></div>
-								<img class="img-fluid" src="{{ asset('magazine/img/libur.jpg') }}"  style="border:0px; width:400px; height:200px;"  alt="">
-							</div>
-							<ul class="tags">
-								<li><a href="#">Libur Hari Raya</a></li>
-							</ul>
-						</div>
-						<div class="col-lg-7 post-right">
-							<a href="image-post.html">
-								<h4>{{$p->nama_pengumuman}}Pengumuman Libur Nasional Hari Raya Idul Adha 1440 H</h4>
-							</a>
-							<ul class="meta">
-								<li><a href="#"><span class="lnr lnr-user"></span>Administrator</a></li>
-								<li><a href="#"><span class="lnr lnr-calendar-full"></span>11 Agustus, 2019</a></li>
-								<li><a href="#"><span class="lnr lnr-tag"></span>Pengumuman</a></li>
-							</ul>
-							<p>
-								{{$p->isi}}libur
+								{{$p->isi}}
 							</p>
 						</div>
 					</div>
@@ -108,15 +84,15 @@
 						</div>
 						<div class="col-lg-7 post-right">
 							<a href="image-post.html">
-								<h4>{{$p->nama_pengumuman}}Penyembelihan Hewan Kurban Idul Adha 2019</h4>
+								<h4>{{$p->nama_pengumuman}}</h4>
 							</a>
 							<ul class="meta">
 								<li><a href="#"><span class="lnr lnr-user"></span>Administrator</a></li>
-								<li><a href="#"><span class="lnr lnr-calendar-full"></span>, 2018</a></li>
+								<li><a href="#"><span class="lnr lnr-calendar-full"></span>{{$p->created_at}}</a></li>
 								<li><a href="#"><span class="lnr lnr-tag"></span>Pengumuman</a></li>
 							</ul>
 							<p>
-								{$p->isi}Idul Adha yang biasa disebut lebaran haji atapun lebaran kurban sangat identik dengan penyembelihan hewan kurban. SMP Negeri 2 Patrol tahun ini juga melakukan penyembelihan hewan kurban. Yang rencananya akan dihadiri oleh guru-guru, siswa dan pengurus OSIS.
+								{{$p->isi}}
 							</p>
 						</div>
 					</div>
@@ -132,15 +108,15 @@
 						</div>
 						<div class="col-lg-7 post-right">
 							<a href="image-post.html">
-								<h4>{{$p->nama_pengumuman}}Pengumuman Peserta Didik Baru Tahun Pelajaran 2019-2020</h4>
+								<h4>{{$p->nama_pengumuman}}</h4>
 							</a>
 							<ul class="meta">
 								<li><a href="#"><span class="lnr lnr-user"></span>Administrator</a></li>
-								<li><a href="#"><span class="lnr lnr-calendar-full"></span>1 Juli, 2019</a></li>
+								<li><a href="#"><span class="lnr lnr-calendar-full"></span>{{$p->created_at}}</a></li>
 								<li><a href="#"><span class="lnr lnr-tag"></span>Pengumuman</a></li>
 							</ul>
 							<p class="excert">
-								{{$p->isi}}Setelah libur semester ganjil tahun ajaran 2016-2017, proses belajar mengajar di semester genap tahun ajaran 2019-2020 mulai aktif kembali tanggal 6 Januari 2020.
+								{{$p->isi}}
 							</p>
 						</div>
 					</div>
@@ -156,19 +132,19 @@
 						</div>
 						<div class="col-lg-7 post-right">
 							<a href="image-post.html">
-								<h4>{{$p->nama_pengumuman}}SMPN 2 Patrol Resepsi Pelepasan Siswa Tahun Ajaran 2018/2019.</h4>
+								<h4>{{$p->nama_pengumuman}}</h4>
 							</a>
 							<ul class="meta">
 								<li><a href="#"><span class="lnr lnr-user"></span>Administrator</a></li>
-								<li><a href="#"><span class="lnr lnr-calendar-full"></span>03 April, 2018</a></li>
+								<li><a href="#"><span class="lnr lnr-calendar-full"></span>{{$p->created_at}}</a></li>
 								<li><a href="#"><span class="lnr lnr-tag"></span>Pengumuman</a></li>
 							</ul>
 							<p>
-								{{$p->isi}SMP Negeri 2 Patrol adakan pelepasan Siswa/i kelas IX, Tahun Ajaran 2018/2019 bertempat di halaman SMPN 2 Patrol Desa Arjasari, Kecamatan Patrol Kabupaten Indramayu. Dengan mengusung Tema Meraih Cita-cita Sambut Masa Depan dengan Kemandirian Berakhlak Mulia. Yang bertujuan untuk menumbuhkan, kecintaan serta pengabdian keluarga besar SMPN 2 Patrol. Kepada Almamater Pendidikan. Juga mempererat tali silaturahmi untuk meningkatkan rasa persaudaraan, dan kebersamaan.
+								{{$p->isi}}
 							</p>
 						</div>
-					</div>
-					<!-- @endforeach -->
+					</div> -->
+					@endforeach
 				</div>
 
 				<!-- End latest-post Area -->
@@ -228,7 +204,7 @@
 							</div>
 						</div>
 					</div>
-					<div class="single-sidebar-widget ads-widget">
+			<!-- 		<div class="single-sidebar-widget ads-widget">
 						<img class="img-fluid" src="img/sidebar-ads.jpg" alt="">
 					</div>
 					<div class="single-sidebar-widget most-popular-widget">
@@ -293,7 +269,7 @@
 								</ul>
 							</div>
 						</div>
-					</div>
+					</div> -->
 				</div>
 			</div>
 		</div>
