@@ -7,7 +7,7 @@
 			<div class="row">
 				<div class="col-lg-12">
 					<div class="hero-nav-area">
-						<h1 class="text-white">About Us</h1>
+						<h1 class="text-white">Tentang</h1>
 						<p class="text-white link-nav"><a href="index.html">Home </a>  <span class="lnr lnr-arrow-right"></span><a href="about.html">About Us </a></p>
 					</div>
 				</div>
@@ -22,45 +22,40 @@
 		<div class="row">
 			<div class="col-lg-4">
 				<div class="single-service d-flex flex-row">
-					<div class="icon">
-						<span class="lnr lnr-sun"></span>
-					</div>
 					<div class="details">
 						<a href="#">
-							<h4>Stunning Visuals</h4>
+							<center><h4>Prakata Kepala Sekolah</h4></center>
 						</a>
-						<p>
-							Here, I focus on a range of items and features that we use in life without giving them a second thought such as Coca Cola.
+						<p align="justify">
+							Bismillahirohmannirrohim <br/>Assalamualaikum Warahmatullah Wabarakatuh <br/>Kami mengucapkan selamat datang di Website kami Sekolah Menengah Pertama Negeri (SMPN) 2 Patrol yang saya tujukan untuk seluruh unsur pimpinan, guru, karyawan, siswa, dan masyarakat guna dapat mengakses seluruh informasi tentang segala profil, aktifitas atau kegiatan sekolah kami.
 						</p>
 					</div>
 				</div>
 			</div>
 			<div class="col-lg-4">
 				<div class="single-service d-flex flex-row">
-					<div class="icon">
-						<span class="lnr lnr-code"></span>
-					</div>
 					<div class="details">
 						<a href="#">
-							<h4>Clean Code</h4>
+							<center><h4>VISI</h4></center>
 						</a>
-						<p>
-							Over 92% of computers are infected with Adware and spyware. Such software is rarely accompanied by uninstall utility.
+						<p align="justify">
+							Terwujudnya peserta didik yang "DINAMIS" (Disiplin, Inovatif, Asri dan Agamis)
 						</p>
 					</div>
 				</div>
 			</div>
 			<div class="col-lg-4">
 				<div class="single-service d-flex flex-row">
-					<div class="icon">
-						<span class="lnr lnr-clock"></span>
-					</div>
 					<div class="details">
 						<a href="#">
-							<h4>Punctuality</h4>
+							<center><h4>MISI</h4></center>
 						</a>
-						<p>
-							If you own an Iphone, you’ve probably already worked out how much fun it is to use it to watch movies-it has that nice big screen.
+						<p align="justify">
+							1. Mewujudkan budaya disiplin, tertib, dan tanggung jawab bagi seluruh warga sekolah. <br/>
+							2. Mewujudkan suasana pembelajaran yang aktif, inovatif, kreatif, efektif, dan menyenangkan (PAIKEM) dengan pendekatan scienttific. <br/>
+							3. Mengupayakan sarana dan prasarana yang dapat meningkatkan prestasi akademik dan non-akademik. <br/>
+							4. Mewujudkan kondisi lingkungan yang bersih, rindang, aman, sehat, rapi, dan indah (ASRI) serta nyaman untuk mencegah pencemaran dan kerusakan lingkungan. <br/>
+							5. Mewujudkan suasana sekolah yang bernuansa religius/agamis, berbudi pekerti luhur, peduli terhadap sesama, jujur, sopan, dan santun.
 						</p>
 					</div>
 				</div>
@@ -76,11 +71,10 @@
 		<div class="row align-items-center justify-content-end">
 			<div class="col-lg-6 no-padding info-right">
 				<h1>
-				Who we are <br>
-				to Serve the nation
+				SMP Negeri 2 Patrol
 				</h1>
-				<p>
-					inappropriate behavior is often laughed off as “boys will be boys,” women face higher conduct standards especially in the workplace. That’s why it’s crucial that, as women, our behavior on the job is beyond reproach.
+				<p align="justify">
+					Sekolah Menengah Pertama (SMP) Negeri 2 Patrol merupakan salah satu sekolah yang terdapat di Kecamatan Patrol Kabupaten Indramayu.
 				</p>
 				<div class="row no-gutters">
 					<div class="single-services col">
@@ -109,126 +103,14 @@
 <!-- End info Area -->
 
 <!-- Start feedback Area -->
-<section class="feedback-area section-gap" id="feedback">
-	<div class="container">
-		<div class="row justify-content-center">
-			<div class="col-md-12 pb-50 header-text text-center">
-				<h1 class="mb-10">Goals to Achieve for the leadership</h1>
-				<p>
-					Who are in extremely love with eco friendly system..
-				</p>
-			</div>
-		</div>
-		<div class="row feedback-contents justify-content-between align-items-center">
-			<div class="col-lg-6 feedback-left">
-				<div class="mn-accordion" id="accordion">
-					<!--Accordion item-->
-					<div class="accordion-item">
-						<div class="accordion-heading">
-							<h3>Success</h3>
-							<div class="icon">
-								<i class="lnr lnr-chevron-right"></i>
-							</div>
-						</div>
-						<div class="accordion-content">
-							<p>For many of us, our very first experience of learning about the celestial bodies begins when we saw our first full moon in the sky. It is truly a magnificent view even to the naked eye. If the night is clear, you can see amazing detail of the lunar surface just star gazing on in your back yard.</p>
-						</div>
-					</div>
-					<!--Accordion item-->
-					<!--Accordion item-->
-					<div class="accordion-item">
-						<div class="accordion-heading">
-							<h3>Info</h3>
-							<div class="icon">
-								<i class="lnr lnr-chevron-right"></i>
-							</div>
-						</div>
-						<div class="accordion-content">
-							<p>For many of us, our very first experience of learning about the celestial bodies begins when we saw our first full moon in the sky. It is truly a magnificent view even to the naked eye. If the night is clear, you can see amazing detail of the lunar surface just star gazing on in your back yard.</p>
-						</div>
-					</div>
-					<!--Accordion item-->
-					<!--Accordion item-->
-					<div class="accordion-item">
-						<div class="accordion-heading">
-							<h3>danger</h3>
-							<div class="icon">
-								<i class="lnr lnr-chevron-right"></i>
-							</div>
-						</div>
-						<div class="accordion-content">
-							<p>For many of us, our very first experience of learning about the celestial bodies begins when we saw our first full moon in the sky. It is truly a magnificent view even to the naked eye. If the night is clear, you can see amazing detail of the lunar surface just star gazing on in your back yard.</p>
-						</div>
-					</div>
-					<!--Accordion item-->
-					<!--Accordion item-->
-					<div class="accordion-item">
-						<div class="accordion-heading">
-							<h3>Warning</h3>
-							<div class="icon">
-								<i class="lnr lnr-chevron-right"></i>
-							</div>
-						</div>
-						<div class="accordion-content">
-							<p>For many of us, our very first experience of learning about the celestial bodies begins when we saw our first full moon in the sky. It is truly a magnificent view even to the naked eye. If the night is clear, you can see amazing detail of the lunar surface just star gazing on in your back yard.</p>
-						</div>
-					</div>
-					<!--Accordion item-->
-				</div>
-			</div>
-			<div class="col-lg-5 feedback-right relative d-flex justify-content-center align-items-center">
-				<div class="overlay overlay-bg"></div>
-				<a class="play-btn" href="https://www.youtube.com/watch?v=ARA0AxrnHdM"><img class="img-fluid" src="img/play-btn.png" alt=""></a>
-			</div>
-		</div>
-	</div>
-</section>
+
 <!-- End feedback Area -->
 
 <!-- Start testimonial Area -->
-<section class="testimonial-area section-gap">
-	<div class="container">
-		<div class="row d-flex justify-content-center">
-			<div class="menu-content pb-70 col-lg-8">
-				<div class="title text-center">
-					<h1 class="mb-10">What Our Client’s Say</h1>
-					<p>Who are in extremely love with friendly system.</p>
-				</div>
-			</div>
-		</div>
-		<div class="row">
-			<div class="active-testimonial">
-				<div class="single-testimonial item d-flex flex-row">
-					<div class="thumb">
-						<img class="img-fluid" src="img/about/user1.png" alt="">
-					</div>
-					<div class="desc">
-						<p>
-							Accessories Here you can find the best computer accessory for your laptop, monitor, printer, scanner, speaker, projector, hardware.
-						</p>
-						<h4 mt-30>Mark Alviro Wiens</h4>
-						<p>CEO at Google</p>
-					</div>
-				</div>
-				<div class="single-testimonial item d-flex flex-row">
-					<div class="thumb">
-						<img class="img-fluid" src="img/about/user2.png" alt="">
-					</div>
-					<div class="desc">
-						<p>
-							Hypnosis quit smoking methods maintain caused quite world over the last two decades. There is a lot of argument pertaining to
-						</p>
-						<h4 mt-30>Lina Harrington</h4>
-						<p>CEO at Facebook</p>
-					</div>
-				</div>
-			</div>
-		</div>
-	</div>
-</section>
+
 <!-- End testimonial Area -->
 <!-- Start brands Area -->
-<section class="brands-area pb-60 pt-60">
+<section class="brands-area pb-10 pt-10">
 	<div class="container no-padding">
 		<div class="brand-wrap">
 			<div class="row align-items-center active-brand-carusel justify-content-start no-gutters">
