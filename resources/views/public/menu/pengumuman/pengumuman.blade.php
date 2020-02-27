@@ -18,23 +18,15 @@
 <section class="latest-post-area pb-120">
 	<div class="container no-padding">
 		<div class="row">
-			<div class="col-lg-8 post-list">
+			<div class="col-lg-12 post-list">
 				<!-- Start latest-post Area -->
 				<div class="latest-post-wrap">
 					<h4 class="cat-title">Pengumuman</h4>
 					@foreach($pengumuman as $p )
 					<div class="single-latest-post row align-items-center">
-						<div class="col-lg-5 post-left">
-							<div class="feature-img relative">
-								<div class="overlay overlay-bg"></div>
-								<img class="img-fluid" src="{{ asset('magazine/img/libur.jpg') }}"  style="border:0px; width:400px; height:200px;"  alt="">
-							</div>
-							<ul class="tags">
-								<li><a href="#">Libur Semester</a></li>
-							</ul>
-						</div>
-						<div class="col-lg-7 post-right">
-							<a href="image-post.html">
+						
+						<div class="col-lg-12">
+							<a href="{{route('post.p',$p->id)}}">
 								
 								<h4>{{ $p->nama_pengumuman }}</h4>
 							</a>
@@ -149,7 +141,7 @@
 
 				<!-- End latest-post Area -->
 			</div>
-			<div class="col-lg-4">
+			<!-- <div class="col-lg-4">
 				<div class="sidebars-area">
 					<div class="single-sidebar-widget editors-pick-widget">
 						<h6 class="title">Editor’s Pick</h6>
@@ -203,7 +195,7 @@
 								</div>
 							</div>
 						</div>
-					</div>
+					</div> -->
 			<!-- 		<div class="single-sidebar-widget ads-widget">
 						<img class="img-fluid" src="img/sidebar-ads.jpg" alt="">
 					</div>

@@ -15,6 +15,7 @@ class PostController extends Controller
 
     public function pengumuman($id){
     	$pengumuman = Pengumuman::where('id',$id)->get();
-    	return view('public/menu/pengumuman/post',compact($pengumuman));
+    	return view('public/menu/pengumuman/post',compact('pengumuman'));
     }
+
 }

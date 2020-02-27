@@ -15,6 +15,14 @@ class PPengumumanController extends Controller
 
    }
 
+   public function tampilisisatudata($id){
+
+    $pengumuman = Pengumuman::first();        
+
+    return view('public.menu.pengumuman.pengumuman', ['pengumuman' => $pengumuman]); 
+
+   }
+
     public function show(){
     	return view('public/menu/pengumuman/pengumuman');
     }
