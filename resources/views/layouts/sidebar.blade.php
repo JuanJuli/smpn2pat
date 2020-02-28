@@ -9,6 +9,13 @@
     	<a href="{{ route('admin')}}"><i class="fa fa-home"></i> <span>Home</span></a>
     </li>
 
+    @if(URL::current() == URL::route('kelas'))
+    <li class="active">
+        @else
+        <li>
+        @endif
+        <a href="{{ route('kelas')}}"><i class="fa fa-users"> <span>Data Kelas</span></i></a></li>    
+
     @if(URL::current() == URL::route('siswa'))
     <li class="active">
     	@else
@@ -37,8 +44,18 @@
     	@endif
     	<a href="{{ route('identitas')}}"><i class="fa fa-address-card"> <span>Identitas</span></i></a></li>
 
-    <li>
-        <a href="#"><i class="fa fa-users"><span> User</span></i></a>
-    </li>
+    @if(URL::current() == URL::route('admin.galery'))
+    <li class="active">
+        @else
+        <li>
+        @endif
+        <a href="{{ route('admin.galery')}}"><i class="fa fa-address-card"> <span>Galery</span></i></a></li>
+
+    @if(URL::current() == URL::route('user'))
+    <li class="active">
+        @else
+        <li>
+        @endif
+        <a href="{{ route('user')}}"><i class="fa fa-user"> <span>User</span></i></a></li>
 
 </ul>

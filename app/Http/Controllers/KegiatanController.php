@@ -105,7 +105,7 @@ class KegiatanController extends Controller
 
     public function destroy($id){
 
-        $tujuan = 'file/kegiatan';
+        $tujuan = 'file/kegiatan/';
 
         $kegiatan = Kegiatan::findOrFail($id);
 

@@ -18,8 +18,24 @@
 Auth::routes();
 Route::get('/', 'PublicController@show')->name('public');
 Route::get('admin', 'HomeController@index')->name('admin');
+// Kelas
+Route::resource('kelas','KelasController');
+Route::get('kelas','KelasController@index')->name('kelas');
+Route::get('kelas/tambah','KelasController@show')->name('form.kelas');
+Route::post('kelas/add','KelasController@store')->name('add.kelas');
+Route::get('kelas/edit/{id}','KelasController@edit')->name('edit.kelas');
+Route::post('kelas/update','KelasController@update')->name('update.kelas');
+Route::get('kelas/hapus/{id}','KelasController@destroy')->name('destroy.kelas');
 
+// Siswa
+Route::resource('siswa','SiswaController');
 Route::get('siswa', 'SiswaController@index')->name('siswa');
+Route::get('siswa/tambah','SiswaController@show')->name('form.siswa');
+Route::post('siswa/add','SiswaController@store')->name('add.siswa');
+Route::get('siswa/edit/{id}','SiswaController@edit')->name('edit.siswa');
+Route::post('siswa/update','SiswaController@update')->name('update.siswa');
+Route::get('siswa/hapus/{id}','SiswaController@destroy')->name('destroy.siswa');
+Route::post('siswa/ubah','SiswaController@ubah')->name('ubah.siswa');
 // Kegiatan
 Route::get('kegiatan', 'KegiatanController@show')->name('kegiatan');
 Route::get('kegiatan/ubah/{id}','KegiatanController@ubah')->name('admin.ubahk');
@@ -41,7 +57,12 @@ Route::resource('identitas','IdentitasController');
 Route::get('identitas', 'IdentitasController@index')->name('identitas');
 Route::get('identitas/edit/{id}','IdentitasController@edit')->name('identitas.edit');
 Route::post('identitas/update','IdentitasController@update')->name('identitas.update');
-//==========================PUBLIC=================================//
+// User
+Route::resource("User",'UserController');
+Route::get("User",'UserController@show')->name('user');
+Route::get("User/edit",'UserController@edit')->name('edit.user');
+Route::post("User/update",'UserController@update')->name('update.user');
+//========================PUBLIC=================================//
 Route::resource('home','PublicController');
 Route::get('home','PublicController@show')->name('public');
 //Pengumuman
@@ -60,3 +81,19 @@ Route::get('kontak','KontakController@show')->name('kontak');
 Route::resource('post','PostController');
 Route::get('post-kegiatan/{id}','PostController@kegiatan')->name('post.k');
 Route::get('post-pengumuman/{id}','PostController@pengumuman')->name('post.p');
+Route::get('siswa-sekolah','PostController@siswa')->name('post.siswa');
+Route::get('album-sekolah/{id}','PostController@album')->name('post.album');
+// Galety
+Route::resource('galery','GaleryController');
+Route::get('galery-sekolah','GaleryController@index')->name('public.galery');
+
+Route::get('galery-admin/tambah','GaleryController@add')->name('tambah.galery');
+Route::get('galery-admin','GaleryController@show')->name('admin.galery');
+Route::get('galery/edit/{id}','GaleryController@edit')->name('edit.galery');
+Route::get('galery/hapus/{id}','GaleryController@destroy')->name('destroy.album');
+Route::post('galery/add','GaleryController@store')->name('add.galery');
+Route::post('galery/update','GaleryController@update')->name('update.album');
+Route::get('galery/detail/{id}','GaleryController@detail')->name('detail.album');
+Route::post('gelary-admin/add-foto','GaleryController@addFoto')->name('add.foto');
+Route::get('galery-admin/tambah-foto/{id}','GaleryController@tambahFoto')->name('tambah.foto');
+Route::get('galery-admin/hapus-foto/{id}','GaleryController@hapusFoto')->name('hapus.foto');
