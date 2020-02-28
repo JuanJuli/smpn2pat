@@ -7,8 +7,8 @@
 		<div class="row">
 			<div class="col-lg-12">
 				<div class="hero-nav-area">
-					<h1 class="text-white">Archive Posts</h1>
-					<p class="text-white link-nav"><a href="index.html">Home </a>  <span class="lnr lnr-arrow-right"></span><a href="archive.html">Archive Posts </a></p>
+					<h1 class="text-white">Kegiatan</h1>
+					<h4 class="text-white">Ada Beberapa Kegiatan di SMP NEGERI 2 PATROL yang boleh diikuti</h4>
 				</div>
 			</div>
 			<div class="col-lg-12">
@@ -27,21 +27,20 @@
 			<div class="col-lg-8 post-list">
 				<!-- Start latest-post Area -->
 				<div class="latest-post-wrap">
-					<h4 class="cat-title">Latest News</h4>
+					<h4 class="cat-title">Kegiatan</h4>
 					<div class="single-latest-post row align-items-center">
 						<div class="col-lg-5 post-left">
 							<div class="feature-img relative">
 								<div class="overlay overlay-bg"></div>
-								<img class="img-fluid" src="img/l1.jpg" alt="">
+								<img class="img-fluid" src="img/p.jpg" alt="">
 							</div>
 							<ul class="tags">
-								<li><a href="#">Lifestyle</a></li>
+								<li><a href="#"><img class="img-fluid" src="" alt="">Lifestyle</a></li>
 							</ul>
 						</div>
 						<div class="col-lg-7 post-right">
 							<a href="image-post.html">
-								<h4>A Discount Toner Cartridge Is
-								Better Than Ever.</h4>
+								<h4>PENTAS SENI</h4>
 							</a>
 							<ul class="meta">
 								<li><a href="#"><span class="lnr lnr-user"></span>Mark wiens</a></li>
@@ -49,7 +48,32 @@
 								<li><a href="#"><span class="lnr lnr-bubble"></span>06 Comments</a></li>
 							</ul>
 							<p class="excert">
-								Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt.
+								Pentas seni atau yang lebih dikenal dengan singkatan "Pensi" merupakan sebuah kegiatan yang dilakukan dalam bentuk pertunjukkan berbagai macam kreatifitasseni yang dilakukan oleh anak-anak sekolah di dalam lingkungan sekolah mereka.	</p>
+						</div>
+					</div>
+					<div class="single-latest-post row align-items-center">
+						<div class="col-lg-5 post-left">
+							<div class="feature-img relative">
+								<div class="overlay overlay-bg"></div>
+								<img class="img-fluid" src="img/l2.jpg" alt="">
+							</div>
+							<ul class="tags">
+								<li><a href="#">Science</a></li>
+							</ul>
+						</div>
+						<div class="col-lg-7 post-right">
+							<a href="image-post.html">
+								<h4>Porak (Pekan Olah Raga Antar Kelas)</h4>
+							</a>
+							<ul class="meta">
+								<li><a href="#"><span class="lnr lnr-user"></span>Mark wiens</a></li>
+								<li><a href="#"><span class="lnr lnr-calendar-full"></span>03 April, 2018</a></li>
+								<li><a href="#"><span class="lnr lnr-bubble"></span>06 Comments</a></li>
+							</ul>
+							<p>
+								Pekan Olah Raga Antar Kelas (PORAK) ini merupakan suatu kegiatan rutin yang biasa di laksanakan setiap tahun setelah pelaksanaan UAS.
+   							 	Pekan Olah Raga Antar Kelas (PORAK) ini di maksudkan agar para siswa siswi rutin ke sekolah sehingga kegiatan remidial akan terlaksana, karena siswa siswi mengikuti kegiatan ini. Selain itu siswa siswi yang mempunyai bakat dalam bidang olahraga, dapat menyalurkan kemampuanya dalam kegiatan PORAK ini. 
+
 							</p>
 						</div>
 					</div>
@@ -65,8 +89,7 @@
 						</div>
 						<div class="col-lg-7 post-right">
 							<a href="image-post.html">
-								<h4>A Discount Toner Cartridge Is
-								Better Than Ever.</h4>
+								<h4>Diesnatalis</h4>
 							</a>
 							<ul class="meta">
 								<li><a href="#"><span class="lnr lnr-user"></span>Mark wiens</a></li>
@@ -74,135 +97,13 @@
 								<li><a href="#"><span class="lnr lnr-bubble"></span>06 Comments</a></li>
 							</ul>
 							<p>
-								Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt.
+								Jadi setiap tahun SMPN 2 PATROL selalu mengadakan acara diesnatalis. 
+								Di acara diesnatalis sendiri adanya banyak perlombaan antar kelas.
 							</p>
 						</div>
 					</div>
-					<div class="single-latest-post row align-items-center">
-						<div class="col-lg-5 post-left">
-							<div class="feature-img relative">
-								<div class="overlay overlay-bg"></div>
-								<img class="img-fluid" src="img/l3.jpg" alt="">
-							</div>
-							<ul class="tags">
-								<li><a href="#">Travel</a></li>
-							</ul>
-						</div>
-						<div class="col-lg-7 post-right">
-							<a href="image-post.html">
-								<h4>A Discount Toner Cartridge Is
-								Better Than Ever.</h4>
-							</a>
-							<ul class="meta">
-								<li><a href="#"><span class="lnr lnr-user"></span>Mark wiens</a></li>
-								<li><a href="#"><span class="lnr lnr-calendar-full"></span>03 April, 2018</a></li>
-								<li><a href="#"><span class="lnr lnr-bubble"></span>06 Comments</a></li>
-							</ul>
-							<p>
-								Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt.
-							</p>
-						</div>
-					</div>
-					<div class="single-latest-post row align-items-center">
-						<div class="col-lg-5 post-left">
-							<div class="feature-img relative">
-								<div class="overlay overlay-bg"></div>
-								<img class="img-fluid" src="img/l4.jpg" alt="">
-							</div>
-							<ul class="tags">
-								<li><a href="#">Fashion</a></li>
-							</ul>
-						</div>
-						<div class="col-lg-7 post-right">
-							<a href="image-post.html">
-								<h4>A Discount Toner Cartridge Is
-								Better Than Ever.</h4>
-							</a>
-							<ul class="meta">
-								<li><a href="#"><span class="lnr lnr-user"></span>Mark wiens</a></li>
-								<li><a href="#"><span class="lnr lnr-calendar-full"></span>03 April, 2018</a></li>
-								<li><a href="#"><span class="lnr lnr-bubble"></span>06 Comments</a></li>
-							</ul>
-							<p>
-								Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt.
-							</p>
-						</div>
-					</div>
-					<div class="single-latest-post row align-items-center">
-						<div class="col-lg-5 post-left">
-							<div class="feature-img relative">
-								<div class="overlay overlay-bg"></div>
-								<img class="img-fluid" src="img/r1.jpg" alt="">
-							</div>
-							<ul class="tags">
-								<li><a href="#">Science</a></li>
-							</ul>
-						</div>
-						<div class="col-lg-7 post-right">
-							<a href="image-post.html">
-								<h4>A Discount Toner Cartridge Is
-								Better Than Ever.</h4>
-							</a>
-							<ul class="meta">
-								<li><a href="#"><span class="lnr lnr-user"></span>Mark wiens</a></li>
-								<li><a href="#"><span class="lnr lnr-calendar-full"></span>03 April, 2018</a></li>
-								<li><a href="#"><span class="lnr lnr-bubble"></span>06 Comments</a></li>
-							</ul>
-							<p>
-								Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt.
-							</p>
-						</div>
-					</div>
-					<div class="single-latest-post row align-items-center">
-						<div class="col-lg-5 post-left">
-							<div class="feature-img relative">
-								<div class="overlay overlay-bg"></div>
-								<img class="img-fluid" src="img/r2.jpg" alt="">
-							</div>
-							<ul class="tags">
-								<li><a href="#">Travel</a></li>
-							</ul>
-						</div>
-						<div class="col-lg-7 post-right">
-							<a href="image-post.html">
-								<h4>A Discount Toner Cartridge Is
-								Better Than Ever.</h4>
-							</a>
-							<ul class="meta">
-								<li><a href="#"><span class="lnr lnr-user"></span>Mark wiens</a></li>
-								<li><a href="#"><span class="lnr lnr-calendar-full"></span>03 April, 2018</a></li>
-								<li><a href="#"><span class="lnr lnr-bubble"></span>06 Comments</a></li>
-							</ul>
-							<p>
-								Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt.
-							</p>
-						</div>
-					</div>
-					<div class="single-latest-post row align-items-center">
-						<div class="col-lg-5 post-left">
-							<div class="feature-img relative">
-								<div class="overlay overlay-bg"></div>
-								<img class="img-fluid" src="img/r3.jpg" alt="">
-							</div>
-							<ul class="tags">
-								<li><a href="#">Fashion</a></li>
-							</ul>
-						</div>
-						<div class="col-lg-7 post-right">
-							<a href="image-post.html">
-								<h4>A Discount Toner Cartridge Is
-								Better Than Ever.</h4>
-							</a>
-							<ul class="meta">
-								<li><a href="#"><span class="lnr lnr-user"></span>Mark wiens</a></li>
-								<li><a href="#"><span class="lnr lnr-calendar-full"></span>03 April, 2018</a></li>
-								<li><a href="#"><span class="lnr lnr-bubble"></span>06 Comments</a></li>
-							</ul>
-							<p>
-								Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt.
-							</p>
-						</div>
-					</div>
+					
+					
 					<div class="load-more">
 						<a href="#" class="primary-btn">Load More Posts</a>
 					</div>
