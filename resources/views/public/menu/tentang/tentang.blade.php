@@ -66,7 +66,7 @@
 <!-- End service Area -->
 
 <!-- Start info Area -->
-<section class="info-area section-gap relative">
+<!-- <section class="info-area section-gap relative">
 	<div class="container">
 		<div class="row align-items-center justify-content-end">
 			<div class="col-lg-6 no-padding info-right">
@@ -99,7 +99,7 @@
 			</div>
 		</div>
 	</div>
-</section>
+</section> -->
 <!-- End info Area -->
 
 <!-- Start feedback Area -->
@@ -110,7 +110,7 @@
 
 <!-- End testimonial Area -->
 <!-- Start brands Area -->
-<section class="brands-area pb-10 pt-10">
+<!-- <section class="brands-area pb-10 pt-10">
 	<div class="container no-padding">
 		<div class="brand-wrap">
 			<div class="row align-items-center active-brand-carusel justify-content-start no-gutters">
@@ -132,5 +132,5 @@
 			</div>
 		</div>
 	</div>
-</section>
+</section> -->
 @endsection

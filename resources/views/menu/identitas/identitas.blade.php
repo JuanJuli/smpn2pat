@@ -32,6 +32,8 @@
                  <th>Nama Sekolah</th>
                  <th>Alamat</th>
                  <th>Email</th>
+                 <th>Logo</th>
+                 <th>Foto</th>
                  <th>Pilihan</th>
             </tr>
         </thead>
@@ -41,6 +43,14 @@
           <td>{{$i->nama}}</td>
           <td>{{$i->alamat}}</td>
           <td>{{$i->email}}</td>
+          <td>
+            <img width="75" class="img-thumbnail" src="{{ URL::to('/') }}/album/{{ $i->logo }}">
+          </td>
+          <td>
+            <img width="75" class="img-thumbnail" src="{{ URL::to('/') }}/album/{{ $i->gambar1 }}">
+            <img width="75" class="img-thumbnail" src="{{ URL::to('/') }}/album/{{ $i->gambar2 }}">
+            <img width="75" class="img-thumbnail" src="{{ URL::to('/') }}/album/{{ $i->gambar3 }}">
+          </td>
           <td>
             <a href="{{route('identitas.edit', $i->id)}}" class="btn btn-xs btn-info">Edit</a>
           </td>

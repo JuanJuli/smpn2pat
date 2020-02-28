@@ -3,6 +3,8 @@
 namespace App\Http\Controllers;
 
 use App\Pengumuman;
+use App\Kegiatan;
+
 use Illuminate\Http\Request;
 
 class PPengumumanController extends Controller
@@ -10,8 +12,9 @@ class PPengumumanController extends Controller
 	public function tampilisidatabase(){
 
     $pengumuman = Pengumuman::all();        
+    $kegiatan = Kegiatan::all();
 
-    return view('public.menu.pengumuman.pengumuman', ['pengumuman' => $pengumuman]); 
+    return view('public.menu.pengumuman.pengumuman',compact('kegiatan','pengumuman')); 
 
    }
 
@@ -25,9 +28,6 @@ class PPengumumanController extends Controller
 
     public function show(){
     	return view('public/menu/pengumuman/pengumuman');
-    }
-    public function store(){
-    	
     }
 
     public function pengumuman($id) {

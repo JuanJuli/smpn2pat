@@ -5,6 +5,7 @@ scratch. This page gets rid of all links and provides the needed markup only.
 -->
 <html>
 <head>
+  <meta name="csrf-token" content="{{ csrf_token() }}">
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   @yield('title')
@@ -158,5 +159,6 @@ desired effect
 <!-- Optionally, you can add Slimscroll and FastClick plugins.
      Both of these plugins are recommended to enhance the
      user experience. -->
+@yield('skrip')
 </body>
 </html>

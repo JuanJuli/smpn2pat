@@ -18,6 +18,11 @@ class Identitas extends Migration
             $table->string('nama');
             $table->string('alamat');
             $table->string('email');
+            $table->string('logo');
+            $table->string('gambar1');
+            $table->string('gambar2');
+            $table->string('gambar3');
+            $table->timestamps();
         });
     }
 
