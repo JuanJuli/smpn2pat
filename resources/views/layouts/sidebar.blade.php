@@ -14,7 +14,7 @@
         @else
         <li>
         @endif
-        <a href="{{ route('kelas')}}"><i class="fa fa-users"> <span>Data Kelas</span></i></a></li>    
+        <a href="{{ route('kelas')}}"><i class="fa fa-id-badge"> <span>Data Kelas</span></i></a></li>    
 
     @if(URL::current() == URL::route('siswa'))
     <li class="active">
@@ -49,7 +49,7 @@
         @else
         <li>
         @endif
-        <a href="{{ route('admin.galery')}}"><i class="fa fa-address-card"> <span>Galery</span></i></a></li>
+        <a href="{{ route('admin.galery')}}"><i class="fa fa-image"> <span>Galery</span></i></a></li>
 
     @if(URL::current() == URL::route('user'))
     <li class="active">

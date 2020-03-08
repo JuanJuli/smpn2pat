@@ -17,7 +17,7 @@ class SiswaController extends Controller
     public function index()
     {
         $siswa = Siswa::with('kelas')->get();
-        $kelas = Kelas::get();
+        $kelas = Kelas::orderBy('nama','ASC')->get();
         return view('menu/siswa/siswa',compact('siswa','kelas'));
     }
 
@@ -75,7 +75,7 @@ class SiswaController extends Controller
     }
 
     public function show(){
-        $kelas = Kelas::get();
+        $kelas = Kelas::orderBy('nama','ASC')->get();
         return view('menu/siswa/tambah',compact('kelas'));   
     }
 

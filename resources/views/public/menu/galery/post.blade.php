@@ -9,7 +9,8 @@
 			<div class="col-lg-12">
 				<div class="hero-nav-area">
 					<h1 class="text-white">Album {{$al->nama}}</h1>
-					<p class="text-white link-nav"><a href="#">Home </a>  <span class="lnr lnr-arrow-right"></span><a href="{{route('public.galery')}}">Album </a></p>
+					<p class="text-white link-nav"><a href="{{route('public')}}">Home </a>
+					<span class="lnr lnr-arrow-right"></span><a href="{{route('public.galery')}}">Galery </a></p>
 				</div>
 			</div>
 			@endforeach
@@ -17,12 +18,12 @@
 		<div class="container" style="margin-top: 10px;background-color: pink;padding: 8px;">
 			<div class="row">
 				@foreach($foto as $f)
-				<div class="col-lg-4 top-post-left" style="margin-bottom: 10px;">
+				<div class="col-md-4 top-post-left" style="margin-bottom: 10px;">
 					<div class="feature-image-thumb relative">
-						<div class="overlay overlay-bg"></div>
-						
-							<img class="img-fluid" src="{{ URL::to('/') }}/album/{{ $f->nama }}" alt="">
-						
+						<!-- <div class="overlay overlay-bg">
+							
+						</div> -->
+					<img style="max-height: 400px;" class="img-fluid" src="{{ URL::to('/') }}/album/{{ $f->nama }}" alt="">
 					</div>
 				</div>
 				@endforeach

@@ -5,12 +5,14 @@
 	<div class="container no-padding">
 		<div class="row">
 			<div class="col-lg-8 post-list">
+				<div class="latest-post-wrap">
+					<h4 class="cat-title">Kegiatan</h4>
 				<!-- Start single-post Area -->
-				@foreach($kegiatan as $k)
+				@foreach($kegiatan_post as $k)
 				<div class="single-post-wrap">
 					<div class="feature-img-thumb relative">
 						<div class="overlay overlay-bg"></div>
-						<img class="img-fluid" src="{{ URL::to('/') }}/album/{{ $k->gambar }}" alt="">
+						<img class="img-fluid" src="{{ URL::to('/') }}/file/kegiatan/{{ $k->gambar }}" alt="">
 					</div>
 					<div class="content-wrap">
 						<!-- <ul class="tags mt-10">
@@ -37,6 +39,7 @@
 				</div>
 			</div>
 			@endforeach
+		</div>
 			<!-- End single-post Area -->
 		</div>
 		@include('public/layouts/side')

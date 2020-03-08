@@ -67,7 +67,7 @@ Route::resource('home','PublicController');
 Route::get('home','PublicController@show')->name('public');
 //Pengumuman
 Route::resource('pengumuman-sekolah','PPengumumanController');
-Route::get('pengumuman-sekolah','PPengumumanController@tampilisidatabase')->name('public.pengumuman');
+Route::get('pengumuman-sekolah','PPengumumanController@show')->name('public.pengumuman');
 // Kegiataan
 Route::resource('kegiatan-sekolah','PKegiatanController');
 Route::get('kegiatan-sekolah','PKegiatanController@show')->name('public.kegiatan');
@@ -83,6 +83,7 @@ Route::get('post-kegiatan/{id}','PostController@kegiatan')->name('post.k');
 Route::get('post-pengumuman/{id}','PostController@pengumuman')->name('post.p');
 Route::get('siswa-sekolah','PostController@siswa')->name('post.siswa');
 Route::get('album-sekolah/{id}','PostController@album')->name('post.album');
+Route::post('post-kelas','PostController@kelas')->name('post.ukelas');
 // Galety
 Route::resource('galery','GaleryController');
 Route::get('galery-sekolah','GaleryController@index')->name('public.galery');

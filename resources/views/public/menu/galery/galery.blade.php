@@ -14,7 +14,13 @@
 			</div>
 
 		</div>
-		<div class="container" style="margin-top: 10px;background-color: pink;padding: 8px;">
+	</div>	
+</section>
+<section class="top-post-area pt-10">
+	<div class="container" style="background-color: pink;padding: 8px;">
+		<div style="margin-bottom: 10px;">
+			<h4 style="font-size: 14px;font-weight: 600;background: #04091e;color: #fff;padding: 10px 25px;" class="cat-title">Daftar Album</h4>
+		</div>
 			<div class="row">
 				@foreach($album as $al)
 				@php
@@ -26,7 +32,7 @@
 						<div class="overlay overlay-bg"></div>
 						@foreach($foto as $f)
 							@if($al->id==$f->id_a)
-							<img class="img-fluid" src="{{ URL::to('/') }}/album/{{ $f->nama }}" alt="">
+							<img style="width: 100%;max-width: 365px;max-height: 300px;height: 100%;" class="img-fluid" src="{{ URL::to('/') }}/album/{{ $f->nama }}" alt="">
 							@php
 								break;
 							@endphp
@@ -44,8 +50,10 @@
 				</div>
 				@endforeach
 			</div>
+			<div style="margin-top: 10px;">
+				{{ $album->links()}}
+			</div>
 		</div>
-	</div>	
 </section>
 <!-- End top-post Area -->
 <!-- Start latest-post Area -->

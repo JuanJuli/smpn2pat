@@ -16,7 +16,7 @@ class Siswa extends Migration
         Schema::create('siswa', function(Blueprint $table){
             $table->increments('id');
             $table->string('nama');
-            $table->integer('nis');
+            $table->string('nis');
             $table->integer('id_k');
             $table->string('alamat');
             $table->string('jenis_kelamin');

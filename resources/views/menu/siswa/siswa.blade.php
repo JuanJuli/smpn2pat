@@ -32,8 +32,8 @@
             </select>
           </div>
         </div>
-        <div class="table-responsive" >
-        <table style="overflow-x: scroll;" id="example1" class="table table-bordered table-striped">
+        <div class="table-responsive" style="width: 100%;">
+        <table style="width: 100%;" class="table table-bordered table-striped datatable">
             <thead>
               <tr>
                  <th>Nama Siswa</th>
@@ -87,7 +87,9 @@
                 }
             });
         });
-
+       $(".datatable").dataTable({
+          "ordering":false
+       });
     });
 </script>
 @endsection

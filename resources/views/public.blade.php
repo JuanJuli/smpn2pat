@@ -48,7 +48,7 @@
 						<div class="col-lg-5 post-left">
 							<div class="feature-img relative">
 								<div class="overlay overlay-bg"></div>
-								<img class="img-fluid" src="{{ URL::to('/') }}/album/{{ $kg->gambar }}" alt="">
+								<img class="img-fluid" src="{{ URL::to('/') }}/file/kegiatan/{{ $kg->gambar }}" alt="">
 							</div>
 						</div>
 						<div class="col-lg-7 post-right">

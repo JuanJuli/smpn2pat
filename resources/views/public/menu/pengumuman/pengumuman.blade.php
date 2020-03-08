@@ -22,7 +22,7 @@
 				<!-- Start latest-post Area -->
 				<div class="latest-post-wrap">
 					<h4 class="cat-title">Pengumuman</h4>
-					@foreach($pengumuman as $p )
+					@foreach($pengumuman_post as $p )
 					<div class="single-latest-post row align-items-center">
 						
 						<div class="col-lg-12">
@@ -31,16 +31,18 @@
 								<h4>{{ $p->nama_pengumuman }}</h4>
 							</a>
 							<ul class="meta">
-								<li><a href="#"><span class="lnr lnr-user"></span>Administrator</a></li>
 								<li><a href="#"><span class="lnr lnr-calendar-full"></span>{{$p->created_at}}</a></li>
-								<li><a href="#"><span class="lnr lnr-tag"></span>Pengumuman</a></li>
+								<!-- <li><a href="#"><span class="lnr lnr-tag"></span>Pengumuman</a></li> -->
 							</ul>
-							<p>
+							<p class="excert">
 								{{$p->isi}}
 							</p>
 						</div>
 					</div>
 					@endforeach
+					<div style="margin-top: 10px;">
+						{{ $pengumuman_post->links() }}
+					</div>	
 				</div>
 
 				<!-- End latest-post Area -->

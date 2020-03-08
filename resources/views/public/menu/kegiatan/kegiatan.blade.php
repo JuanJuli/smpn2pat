@@ -22,12 +22,12 @@
 				<!-- Start latest-post Area -->
 				<div class="latest-post-wrap">
 					<h4 class="cat-title">Kegiatan</h4>
-					@foreach($kegiatan as $k)
+					@foreach($kegiatan_post as $k)
 					<div class="single-latest-post row align-items-center">
 						<div class="col-lg-5 post-left">
 							<div class="feature-img relative">
 								<div class="overlay overlay-bg"></div>
-								<img class="img-fluid" src="{{ URL::to('/') }}/album/{{ $k->gambar }}" alt="">
+								<img class="img-fluid" src="{{ URL::to('/') }}/file/kegiatan/{{ $k->gambar }}" alt="">
 							</div>
 						</div>
 						<div class="col-lg-7 post-right">
@@ -47,10 +47,9 @@
 						</div>
 					</div>
 					@endforeach
-					<div class="load-more">
-						<a href="#" class="primary-btn">Load More Posts</a>
-					</div>
-					
+					<div style="margin-top: 10px;">
+						{{ $kegiatan_post->links()}}
+					</div>					
 				</div>
 				<!-- End latest-post Area -->
 			</div>

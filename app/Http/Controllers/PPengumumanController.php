@@ -9,30 +9,13 @@ use Illuminate\Http\Request;
 
 class PPengumumanController extends Controller
 {
-	public function tampilisidatabase(){
+	public function show(){
 
-    $pengumuman = Pengumuman::all();        
-    $kegiatan = Kegiatan::all();
+    $pengumuman_post = Pengumuman::orderBy('created_at', 'DESC')->paginate(4);
+    $pengumuman = Pengumuman::orderBy('created_at', 'DESC')->get();        
+    $kegiatan = Kegiatan::orderBy('created_at', 'DESC')->get();
 
-    return view('public.menu.pengumuman.pengumuman',compact('kegiatan','pengumuman')); 
-
-   }
-
-   public function tampilisisatudata($id){
-
-    $pengumuman = Pengumuman::first();        
-
-    return view('public.menu.pengumuman.pengumuman', ['pengumuman' => $pengumuman]); 
+    return view('public.menu.pengumuman.pengumuman',compact('kegiatan','pengumuman','pengumuman_post')); 
 
    }
-
-    public function show(){
-    	return view('public/menu/pengumuman/pengumuman');
-    }
-
-    public function pengumuman($id) {
-        $this->data['title'] = 'Pengumuman';
-        $this->data['pengumuman'] = Models\Pengumuman::find($id);
-        return view('menu.pengumuman', $this->data);
-    }
 }

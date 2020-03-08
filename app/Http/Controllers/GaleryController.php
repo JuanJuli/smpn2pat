@@ -11,7 +11,7 @@ class GaleryController extends Controller
 {
     public function index()
     {
-        $album = Album::all();
+        $album = Album::paginate(9);
         $foto = Foto::all();
     	return view('public/menu/galery/galery',compact(
             'album','foto'));

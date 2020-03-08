@@ -9,8 +9,11 @@ use App\Pengumuman;
 class PKegiatanController extends Controller
 {
     public function show(){
-    	$kegiatan = Kegiatan::all();
-    	$pengumuman = Pengumuman::all();
-    	return view('public/menu/kegiatan/kegiatan',compact('kegiatan','pengumuman'));
+    	$kegiatan_post = Kegiatan::orderBy('created_at', 'DESC')->paginate(4);
+
+    	$kegiatan = Kegiatan::orderBy('created_at', 'DESC')->get();
+    	$pengumuman = Pengumuman::orderBy('created_at', 'DESC')->get();
+
+    	return view('public/menu/kegiatan/kegiatan',compact('kegiatan','pengumuman','kegiatan_post'));
     }
 }

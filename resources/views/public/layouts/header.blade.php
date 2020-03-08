@@ -34,9 +34,8 @@
 					<li class="menu-active"><a href="{{route('public')}}">Home</a></li>
 					<li><a href="{{route('post.siswa')}}">Siswa</a></li><li><a href="{{route('public.kegiatan')}}">Kegiatan</a></li>
 					<li><a href="{{route('public.pengumuman')}}">Pengumuman</a></li>
-					<li><a href="{{route('tentang')}}">Tentang</a></li>
-					<!-- <li><a href="{{route('kontak')}}">Kontak</a></li> -->
 					<li><a href="{{route('public.galery')}}">Galery</a></li>
+					<li><a href="{{route('tentang')}}">Tentang</a></li>
 				</ul>
 			</nav>
 		</div>

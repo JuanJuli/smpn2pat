@@ -2,6 +2,7 @@
 <html lang="zxx" class="no-js">
 	<head>
 		<!-- Mobile Specific Meta -->
+		<meta name="csrf-token" content="{{ csrf_token() }}">
 		<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 		<!-- Favicon-->
 		<link rel="shortcut icon" href="{{ asset('magazine/img/fav.png') }}">
@@ -21,6 +22,7 @@
 		============================================= -->
 		<link rel="stylesheet" href="{{ asset('magazine/css/linearicons.css') }}">
 		<link rel="stylesheet" href="{{ asset('bower_components/font-awesome/css/font-awesome.min.css')}}">
+		<link rel="stylesheet" href="{{ asset('bower_components/bootstrap/dist/css/bootstrap.min.css') }}">
 		<link rel="stylesheet" href="{{ asset('magazine/css/bootstrap.css') }}">
 		<link rel="stylesheet" href="{{ asset('magazine/css/magnific-popup.css') }}">
 		<link rel="stylesheet" href="{{ asset('magazine/css/nice-select.css') }}">
@@ -28,6 +30,7 @@
 		<link rel="stylesheet" href="{{ asset('magazine/css/owl.carousel.css') }}">
 		<link rel="stylesheet" href="{{ asset('magazine/css/jquery-ui.css') }}">
 		<link rel="stylesheet" href="{{ asset('magazine/css/main.css') }}">
+		<link rel="stylesheet" href="{{ asset('bower_components/datatables/css/dataTables.bootstrap.css')}}">
 	</head>
 	<body>
 		@include('public/layouts/header')
@@ -53,5 +56,11 @@
 		<script src="{{ asset('magazine/js/owl.carousel.min.js') }}"></script>
 		<script src="{{ asset('magazine/js/mail-script.js') }}"></script>
 		<script src="{{ asset('magazine/js/main.js') }}"></script>
+		<script src="{{ asset('bower_components/datatables-net/js/jquery.dataTables.js')}}"></script>
+		<script src="{{ asset('bower_components/datatables/js/dataTables.bootstrap.js')}}"></script>
+		
+
+	@yield('skrip')
+
 	</body>
 </html>

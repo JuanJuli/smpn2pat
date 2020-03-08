@@ -26,7 +26,7 @@
 							<!-- <ul class="tags">
 								<li><a href="#">Food Habit</a></li>
 							</ul> -->
-							@foreach($pengumuman as $p)
+							@foreach($pengumuman_post as $p)
 							<h3>{{$p->nama_pengumuman}}</h3>
 							<ul class="meta pb-20">
 								<li><a href="#"><span class="lnr lnr-calendar-full"></span>{{$p->created_at}}</a></li>

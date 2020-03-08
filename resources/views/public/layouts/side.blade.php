@@ -1,5 +1,6 @@
 <div class="col-lg-4">
 	<div class="sidebars-area">
+		@if(URL::current() != URL::route('public.kegiatan'))
 		<div class="single-sidebar-widget editors-pick-widget">
 			<h6 class="title">Kegiatan</h6>
 			<div class="editors-pick-post">
@@ -14,7 +15,7 @@
 					@endphp
 					<div class="single-post d-flex flex-row">
 						<div class="thumb">
-							<img src="{{ URL::to('/') }}/album/{{ $k->gambar }}" alt="" width="75">
+							<img src="{{ URL::to('/') }}/file/kegiatan/{{ $k->gambar }}" alt="" width="75">
 						</div>
 						<div class="detail">
 							<a href="{{route('post.k',$k->id)}}"><h6>{{$k->nama_kegiatan}}</h6></a>
@@ -25,15 +26,16 @@
 					</div>
 					@php
 					$no++;
-					@endphp
-					@if($no>=6)
+					if($no>=6){
 						break;
-					@endif
+					}
+					@endphp
 					@endforeach
 				</div>
 			</div>
 		</div>
-
+		@endif
+		@if(URL::current() != URL::route('public.pengumuman'))
 		<div class="single-sidebar-widget most-popular-widget">
 			<h6 class="title">Pengumuman</h6>
 			@php
@@ -56,11 +58,12 @@
 			</div>
 			@php
 			$no++;
-			@endphp
-			@if($no>=6)
+			if($no>=6){
 				break;
-			@endif
+			}
+			@endphp
 			@endforeach
 		</div>
+		@endif
 	</div>
 </div>
