@@ -5,7 +5,7 @@
 <section class="top-post-area pt-10">
 	<div class="container no-padding">
 		@foreach($identitas as $id)
-		<div class="row small-gutters">
+		<!-- <div class="row small-gutters">
 			<div class="col-lg-8 top-post-left">
 				<div class="feature-image-thumb relative">
 					<div class="overlay overlay-bg"></div>
@@ -30,6 +30,27 @@
 					</div>
 				</div>
 			</div>
+		</div> -->
+		<div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
+		  <div class="carousel-inner">
+		    <div class="carousel-item active">
+		      <img class="d-block w-100" src="{{ URL::to('/') }}/album/{{ $id->gambar1 }}" alt="First slide">
+		    </div>
+		    <div class="carousel-item">
+		      <img class="d-block w-100" src="{{ URL::to('/') }}/album/{{ $id->gambar2 }}" alt="Second slide">
+		    </div>
+		    <div class="carousel-item">
+		      <img class="d-block w-100" src="{{ URL::to('/') }}/album/{{ $id->gambar3 }}" alt="Third slide">
+		    </div>
+		  </div>
+		  <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
+		    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+		    <span class="sr-only">Previous</span>
+		  </a>
+		  <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
+		    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+		    <span class="sr-only">Next</span>
+		  </a>
 		</div>
 		@endforeach
 	</div>

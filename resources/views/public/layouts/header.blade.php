@@ -13,8 +13,8 @@
 			</div>
 		</div>
 	</div>
-	<div class="logo-wrap" style="background-color: white;">
-		<div class="container">
+	<div class="logo-wrap">
+		<div class="container" style="background-image:url('{{asset('/album/gedung 1.jpeg')}}')";>
 			<div class="row justify-content-between align-items-center">
 				<div class="col-lg-4 col-md-4 col-sm-12 logo-left no-padding">
 					<a href="{{route('public')}}">
